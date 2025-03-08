@@ -1,0 +1,134 @@
+{
+    "form1": {
+      "type": "Categorization",
+      "title": "Form1",
+      "elements": [
+        {
+          "type": "Category",
+          "label": "Default",
+          "elements": [
+            {
+              "type": "HorizontalLayout",
+              "elements": [
+                {
+                  "type": "Control",
+                  "scope": "#/properties/firstName"
+                },
+                {
+                  "type": "Control",
+                  "scope": "#/properties/secondName"
+                }
+              ]
+            },
+            {
+              "type": "HorizontalLayout",
+              "elements": [
+                {
+                  "type": "Control",
+                  "scope": "#/properties/birthDate"
+                },
+                {
+                  "type": "Control",
+                  "scope": "#/properties/gender",
+                  "options": {
+                    "format": "radio"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Category",
+          "label": "Address",
+          "elements": [
+            {
+              "type": "VerticalLayout",
+              "elements": [
+                {
+                  "type": "Control",
+                  "scope": "#/properties/adress/properties/street"
+                },
+                {
+                  "type": "Control",
+                  "scope": "#/properties/adress/properties/city"
+                },
+                {
+                  "type": "Control",
+                  "scope": "#/properties/adress/properties/postalCode"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Category",
+          "label": "Hobbies",
+          "elements": [
+            {
+              "type": "VerticalLayout",
+              "elements": [
+                {
+                  "type": "Control",
+                  "scope": "#/properties/hobbies/properties/sport"
+                },
+                {
+                  "type": "Control",
+                  "scope": "#/properties/hobbies/properties/favoriteFood"
+                },
+                {
+                  "type": "Control",
+                  "scope": "#/properties/hobbies/properties/favoriteMovie"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "form2": {
+      "type": "Categorization",
+      "title": "Form2",
+      "elements": [
+        {
+          "type": "Category",
+          "label": "Infos",
+          "elements": [
+            {
+              "type": "VerticalLayout",
+              "elements": [
+                {
+                  "type": "Control",
+                  "scope": "#/properties/pseudo"
+                },
+                {
+                  "type": "Control",
+                  "scope": "#/properties/email"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Category",
+          "label": "Subscribe",
+          "elements": [
+            {
+              "type": "VerticalLayout",
+              "elements": [
+                {
+                  "type": "Control",
+                  "scope": "#/properties/subscription/properties/subscribeNewsletter"
+                },
+                {
+                  "type": "Control",
+                  "scope": "#/properties/subscription/properties/receiveEmailNews"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+  

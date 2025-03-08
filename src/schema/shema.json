@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "properties": {
+    "form1": {
+      "type": "object",
+      "properties": {
+        "firstName": { "type": "string" },
+        "secondName": { "type": "string" },
+        "birthDate": { "type": "string", "format": "date" },
+        "gender": { "type": "string", "enum": ["Men", "Women", "Other"] },
+        "adress": {
+          "type": "object",
+          "properties": {
+            "street": { "type": "string" },
+            "city": { "type": "string" },
+            "postalCode": { "type": "string", "maxLength": 5 }
+          }
+        },
+        "hobbies": {
+          "type": "object",
+          "properties": {
+            "sport": { "type": "string", "enum": ["football", "basketball", "rugby"] },
+            "favoriteFood": { "type": "string" },
+            "favoriteMovie": { "type": "string" }
+          }
+        }
+      }
+    },
+    "form2": {
+      "type": "object",
+      "properties": {
+        "pseudo": { "type": "string" },
+        "email": { "type": "string", "format": "email" },
+        "subscription": {
+          "type": "object",
+          "properties": {
+            "subscribeNewsletter": { "type": "boolean" },
+            "receiveEmailNews": { "type": "boolean" }
+          }
+        }
+      }
+    }
+  }
+}
